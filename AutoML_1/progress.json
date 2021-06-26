@@ -1,0 +1,652 @@
+{
+    "fit_level": "finished",
+    "time_controller": {
+        "total_time_limit": 3600,
+        "model_time_limit": null,
+        "steps": [
+            "simple_algorithms",
+            "default_algorithms",
+            "ensemble"
+        ],
+        "algorithms": [
+            "Baseline",
+            "Linear",
+            "Decision Tree",
+            "Random Forest",
+            "Xgboost",
+            "Neural Network"
+        ],
+        "spend": [
+            {
+                "model_name": "prepare_data",
+                "model_type": "prepare_data",
+                "fit_level": "prepare_data",
+                "train_time": 10.351227045059204
+            },
+            {
+                "model_name": "1_Baseline",
+                "model_type": "Baseline",
+                "fit_level": "simple_algorithms",
+                "train_time": 0.3808777332305908
+            },
+            {
+                "model_name": "2_DecisionTree",
+                "model_type": "Decision Tree",
+                "fit_level": "simple_algorithms",
+                "train_time": 7.904865026473999
+            },
+            {
+                "model_name": "3_Linear",
+                "model_type": "Linear",
+                "fit_level": "simple_algorithms",
+                "train_time": 2.9095969200134277
+            },
+            {
+                "model_name": "4_Default_Xgboost",
+                "model_type": "Xgboost",
+                "fit_level": "default_algorithms",
+                "train_time": 9.547274589538574
+            },
+            {
+                "model_name": "5_Default_NeuralNetwork",
+                "model_type": "Neural Network",
+                "fit_level": "default_algorithms",
+                "train_time": 0.9437129497528076
+            },
+            {
+                "model_name": "6_Default_RandomForest",
+                "model_type": "Random Forest",
+                "fit_level": "default_algorithms",
+                "train_time": 6.5488831996917725
+            },
+            {
+                "model_name": "Ensemble",
+                "model_type": "Ensemble",
+                "fit_level": "ensemble",
+                "train_time": 0.26441097259521484
+            }
+        ],
+        "is_hill_climbing": false,
+        "is_stacking": false
+    },
+    "all_params": {
+        "simple_algorithms": [
+            {
+                "additional": {
+                    "max_steps": 1,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {},
+                    "target_preprocessing": [
+                        "na_exclude"
+                    ],
+                    "ml_task": "regression"
+                },
+                "validation_strategy": {
+                    "validation_type": "split",
+                    "train_ratio": 0.75,
+                    "shuffle": true,
+                    "X_path": "AutoML_1/X.data",
+                    "y_path": "AutoML_1/y.data",
+                    "results_path": "AutoML_1"
+                },
+                "learner": {
+                    "model_type": "Baseline",
+                    "ml_task": "regression",
+                    "n_jobs": -1,
+                    "seed": 1235,
+                    "explain_level": 2
+                },
+                "automl_random_state": 1234,
+                "ml_task": "regression",
+                "explain_level": 2,
+                "name": "1_Baseline",
+                "status": "trained",
+                "final_loss": 515197.30308009556,
+                "train_time": 0.5355687141418457,
+                "data_type": "original",
+                "max_time_for_learner": 360.0
+            },
+            {
+                "additional": {
+                    "trees_in_step": 1,
+                    "train_cant_improve_limit": 0,
+                    "max_steps": 1,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {},
+                    "target_preprocessing": [
+                        "na_exclude"
+                    ],
+                    "ml_task": "regression"
+                },
+                "validation_strategy": {
+                    "validation_type": "split",
+                    "train_ratio": 0.75,
+                    "shuffle": true,
+                    "X_path": "AutoML_1/X.data",
+                    "y_path": "AutoML_1/y.data",
+                    "results_path": "AutoML_1"
+                },
+                "learner": {
+                    "model_type": "Decision Tree",
+                    "ml_task": "regression",
+                    "n_jobs": -1,
+                    "seed": 1235,
+                    "criterion": "mse",
+                    "max_depth": 3,
+                    "explain_level": 2
+                },
+                "automl_random_state": 1234,
+                "ml_task": "regression",
+                "explain_level": 2,
+                "name": "2_DecisionTree",
+                "status": "trained",
+                "final_loss": 433299.4584758626,
+                "train_time": 8.400595664978027,
+                "data_type": "original",
+                "max_time_for_learner": 360.0
+            },
+            {
+                "additional": {
+                    "max_steps": 1,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "weekday": [
+                            "scale_normal"
+                        ],
+                        "month": [
+                            "scale_normal"
+                        ],
+                        "week_number": [
+                            "scale_normal"
+                        ],
+                        "t2m_min_bordeaux": [
+                            "scale_normal"
+                        ],
+                        "t2m_bordeaux": [
+                            "scale_normal"
+                        ],
+                        "t2m_max_bordeaux": [
+                            "scale_normal"
+                        ],
+                        "prectot_bordeaux": [
+                            "scale_normal"
+                        ],
+                        "t2m_min_lille": [
+                            "scale_normal"
+                        ],
+                        "t2m_lille": [
+                            "scale_normal"
+                        ],
+                        "t2m_max_lille": [
+                            "scale_normal"
+                        ],
+                        "prectot_lille": [
+                            "scale_normal"
+                        ],
+                        "t2m_min_paris": [
+                            "scale_normal"
+                        ],
+                        "t2m_paris": [
+                            "scale_normal"
+                        ],
+                        "t2m_max_paris": [
+                            "scale_normal"
+                        ],
+                        "prectot_paris": [
+                            "scale_normal"
+                        ],
+                        "t2m_min_rennes": [
+                            "scale_normal"
+                        ],
+                        "t2m_rennes": [
+                            "scale_normal"
+                        ],
+                        "t2m_max_rennes": [
+                            "scale_normal"
+                        ],
+                        "prectot_rennes": [
+                            "scale_normal"
+                        ],
+                        "t2m_min_nantes": [
+                            "scale_normal"
+                        ],
+                        "t2m_nantes": [
+                            "scale_normal"
+                        ],
+                        "t2m_max_nantes": [
+                            "scale_normal"
+                        ],
+                        "prectot_nantes": [
+                            "scale_normal"
+                        ],
+                        "t2m_min_toulouse": [
+                            "scale_normal"
+                        ],
+                        "t2m_toulouse": [
+                            "scale_normal"
+                        ],
+                        "t2m_max_toulouse": [
+                            "scale_normal"
+                        ],
+                        "prectot_toulouse": [
+                            "scale_normal"
+                        ],
+                        "t2m_min_marseille": [
+                            "scale_normal"
+                        ],
+                        "t2m_marseille": [
+                            "scale_normal"
+                        ],
+                        "t2m_max_marseille": [
+                            "scale_normal"
+                        ],
+                        "prectot_marseille": [
+                            "scale_normal"
+                        ],
+                        "t2m_min_lyon": [
+                            "scale_normal"
+                        ],
+                        "t2m_lyon": [
+                            "scale_normal"
+                        ],
+                        "t2m_max_lyon": [
+                            "scale_normal"
+                        ],
+                        "prectot_lyon": [
+                            "scale_normal"
+                        ],
+                        "t2m_min_nice": [
+                            "scale_normal"
+                        ],
+                        "t2m_nice": [
+                            "scale_normal"
+                        ],
+                        "t2m_max_nice": [
+                            "scale_normal"
+                        ],
+                        "prectot_nice": [
+                            "scale_normal"
+                        ],
+                        "t2m_min_strasbourg": [
+                            "scale_normal"
+                        ],
+                        "t2m_strasbourg": [
+                            "scale_normal"
+                        ],
+                        "t2m_max_strasbourg": [
+                            "scale_normal"
+                        ],
+                        "prectot_strasbourg": [
+                            "scale_normal"
+                        ],
+                        "t2m_min_montpellier": [
+                            "scale_normal"
+                        ],
+                        "t2m_montpellier": [
+                            "scale_normal"
+                        ],
+                        "t2m_max_montpellier": [
+                            "scale_normal"
+                        ],
+                        "prectot_montpellier": [
+                            "scale_normal"
+                        ],
+                        "weighted_t2m": [
+                            "scale_normal"
+                        ],
+                        "weighted_t2m_min": [
+                            "scale_normal"
+                        ],
+                        "weighted_t2m_max": [
+                            "scale_normal"
+                        ],
+                        "weighted_prectot": [
+                            "scale_normal"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude",
+                        "scale_normal"
+                    ],
+                    "ml_task": "regression"
+                },
+                "validation_strategy": {
+                    "validation_type": "split",
+                    "train_ratio": 0.75,
+                    "shuffle": true,
+                    "X_path": "AutoML_1/X.data",
+                    "y_path": "AutoML_1/y.data",
+                    "results_path": "AutoML_1"
+                },
+                "learner": {
+                    "model_type": "Linear",
+                    "ml_task": "regression",
+                    "n_jobs": -1,
+                    "seed": 1235,
+                    "explain_level": 2
+                },
+                "automl_random_state": 1234,
+                "ml_task": "regression",
+                "explain_level": 2,
+                "name": "3_Linear",
+                "status": "trained",
+                "final_loss": 439952.141777006,
+                "train_time": 3.4454214572906494,
+                "data_type": "original",
+                "max_time_for_learner": 360.0
+            }
+        ],
+        "default_algorithms": [
+            {
+                "additional": {
+                    "max_rounds": 10000,
+                    "early_stopping_rounds": 50,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {},
+                    "target_preprocessing": [
+                        "na_exclude",
+                        "scale_normal"
+                    ],
+                    "ml_task": "regression"
+                },
+                "validation_strategy": {
+                    "validation_type": "split",
+                    "train_ratio": 0.75,
+                    "shuffle": true,
+                    "X_path": "AutoML_1/X.data",
+                    "y_path": "AutoML_1/y.data",
+                    "results_path": "AutoML_1"
+                },
+                "learner": {
+                    "model_type": "Xgboost",
+                    "ml_task": "regression",
+                    "n_jobs": -1,
+                    "objective": "reg:squarederror",
+                    "eta": 0.075,
+                    "max_depth": 6,
+                    "min_child_weight": 1,
+                    "subsample": 1.0,
+                    "colsample_bytree": 1.0,
+                    "seed": 4,
+                    "eval_metric": "rmse",
+                    "explain_level": 2
+                },
+                "automl_random_state": 1234,
+                "ml_task": "regression",
+                "explain_level": 2,
+                "name": "4_Default_Xgboost",
+                "status": "trained",
+                "final_loss": 405015.521824378,
+                "train_time": 10.140520811080933,
+                "data_type": "original",
+                "max_time_for_learner": 360.0
+            },
+            {
+                "additional": {
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "weekday": [
+                            "scale_normal"
+                        ],
+                        "month": [
+                            "scale_normal"
+                        ],
+                        "week_number": [
+                            "scale_normal"
+                        ],
+                        "t2m_min_bordeaux": [
+                            "scale_normal"
+                        ],
+                        "t2m_bordeaux": [
+                            "scale_normal"
+                        ],
+                        "t2m_max_bordeaux": [
+                            "scale_normal"
+                        ],
+                        "prectot_bordeaux": [
+                            "scale_normal"
+                        ],
+                        "t2m_min_lille": [
+                            "scale_normal"
+                        ],
+                        "t2m_lille": [
+                            "scale_normal"
+                        ],
+                        "t2m_max_lille": [
+                            "scale_normal"
+                        ],
+                        "prectot_lille": [
+                            "scale_normal"
+                        ],
+                        "t2m_min_paris": [
+                            "scale_normal"
+                        ],
+                        "t2m_paris": [
+                            "scale_normal"
+                        ],
+                        "t2m_max_paris": [
+                            "scale_normal"
+                        ],
+                        "prectot_paris": [
+                            "scale_normal"
+                        ],
+                        "t2m_min_rennes": [
+                            "scale_normal"
+                        ],
+                        "t2m_rennes": [
+                            "scale_normal"
+                        ],
+                        "t2m_max_rennes": [
+                            "scale_normal"
+                        ],
+                        "prectot_rennes": [
+                            "scale_normal"
+                        ],
+                        "t2m_min_nantes": [
+                            "scale_normal"
+                        ],
+                        "t2m_nantes": [
+                            "scale_normal"
+                        ],
+                        "t2m_max_nantes": [
+                            "scale_normal"
+                        ],
+                        "prectot_nantes": [
+                            "scale_normal"
+                        ],
+                        "t2m_min_toulouse": [
+                            "scale_normal"
+                        ],
+                        "t2m_toulouse": [
+                            "scale_normal"
+                        ],
+                        "t2m_max_toulouse": [
+                            "scale_normal"
+                        ],
+                        "prectot_toulouse": [
+                            "scale_normal"
+                        ],
+                        "t2m_min_marseille": [
+                            "scale_normal"
+                        ],
+                        "t2m_marseille": [
+                            "scale_normal"
+                        ],
+                        "t2m_max_marseille": [
+                            "scale_normal"
+                        ],
+                        "prectot_marseille": [
+                            "scale_normal"
+                        ],
+                        "t2m_min_lyon": [
+                            "scale_normal"
+                        ],
+                        "t2m_lyon": [
+                            "scale_normal"
+                        ],
+                        "t2m_max_lyon": [
+                            "scale_normal"
+                        ],
+                        "prectot_lyon": [
+                            "scale_normal"
+                        ],
+                        "t2m_min_nice": [
+                            "scale_normal"
+                        ],
+                        "t2m_nice": [
+                            "scale_normal"
+                        ],
+                        "t2m_max_nice": [
+                            "scale_normal"
+                        ],
+                        "prectot_nice": [
+                            "scale_normal"
+                        ],
+                        "t2m_min_strasbourg": [
+                            "scale_normal"
+                        ],
+                        "t2m_strasbourg": [
+                            "scale_normal"
+                        ],
+                        "t2m_max_strasbourg": [
+                            "scale_normal"
+                        ],
+                        "prectot_strasbourg": [
+                            "scale_normal"
+                        ],
+                        "t2m_min_montpellier": [
+                            "scale_normal"
+                        ],
+                        "t2m_montpellier": [
+                            "scale_normal"
+                        ],
+                        "t2m_max_montpellier": [
+                            "scale_normal"
+                        ],
+                        "prectot_montpellier": [
+                            "scale_normal"
+                        ],
+                        "weighted_t2m": [
+                            "scale_normal"
+                        ],
+                        "weighted_t2m_min": [
+                            "scale_normal"
+                        ],
+                        "weighted_t2m_max": [
+                            "scale_normal"
+                        ],
+                        "weighted_prectot": [
+                            "scale_normal"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude",
+                        "scale_normal"
+                    ],
+                    "ml_task": "regression"
+                },
+                "validation_strategy": {
+                    "validation_type": "split",
+                    "train_ratio": 0.75,
+                    "shuffle": true,
+                    "X_path": "AutoML_1/X.data",
+                    "y_path": "AutoML_1/y.data",
+                    "results_path": "AutoML_1"
+                },
+                "learner": {
+                    "model_type": "Neural Network",
+                    "ml_task": "regression",
+                    "n_jobs": -1,
+                    "dense_1_size": 32,
+                    "dense_2_size": 16,
+                    "learning_rate": 0.05,
+                    "seed": 5,
+                    "explain_level": 2
+                },
+                "automl_random_state": 1234,
+                "ml_task": "regression",
+                "explain_level": 2,
+                "name": "5_Default_NeuralNetwork",
+                "status": "trained",
+                "final_loss": 430172.41157568287,
+                "train_time": 1.3182706832885742,
+                "data_type": "original",
+                "max_time_for_learner": 360.0
+            },
+            {
+                "additional": {
+                    "trees_in_step": 100,
+                    "train_cant_improve_limit": 1,
+                    "min_steps": 1,
+                    "max_steps": 50,
+                    "early_stopping_rounds": 50,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {},
+                    "target_preprocessing": [
+                        "na_exclude",
+                        "scale_normal"
+                    ],
+                    "ml_task": "regression"
+                },
+                "validation_strategy": {
+                    "validation_type": "split",
+                    "train_ratio": 0.75,
+                    "shuffle": true,
+                    "X_path": "AutoML_1/X.data",
+                    "y_path": "AutoML_1/y.data",
+                    "results_path": "AutoML_1"
+                },
+                "learner": {
+                    "model_type": "Random Forest",
+                    "ml_task": "regression",
+                    "n_jobs": -1,
+                    "criterion": "mse",
+                    "max_features": 0.9,
+                    "min_samples_split": 30,
+                    "max_depth": 4,
+                    "seed": 6,
+                    "eval_metric_name": "rmse",
+                    "explain_level": 2
+                },
+                "automl_random_state": 1234,
+                "ml_task": "regression",
+                "explain_level": 2,
+                "name": "6_Default_RandomForest",
+                "status": "trained",
+                "final_loss": 416696.6427587891,
+                "train_time": 7.080978631973267,
+                "data_type": "original",
+                "max_time_for_learner": 360.0
+            }
+        ],
+        "ensemble": [
+            {
+                "model_type": "ensemble",
+                "is_stacked": false,
+                "name": "Ensemble",
+                "status": "trained",
+                "final_loss": 402723.43411037436,
+                "train_time": 0.26441097259521484
+            }
+        ]
+    },
+    "adjust_validation": false
+}

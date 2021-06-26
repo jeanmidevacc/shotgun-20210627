@@ -1,0 +1,16 @@
+if (weighted_t2m_max > 15.132) and (weighted_t2m_max > 18.986) and (weekday <= 4.5) then response: 2379926.88 | based on 325 samples
+
+if (weighted_t2m_max <= 15.132) and (t2m_paris > 2.335) and (t2m_max_strasbourg > 5.41) then response: 2770657.059 | based on 289 samples
+
+if (weighted_t2m_max > 15.132) and (weighted_t2m_max <= 18.986) and (t2m_toulouse <= 17.15) then response: 2510342.115 | based on 148 samples
+
+if (weighted_t2m_max > 15.132) and (weighted_t2m_max > 18.986) and (weekday > 4.5) then response: 2186568.508 | based on 120 samples
+
+if (weighted_t2m_max <= 15.132) and (t2m_paris <= 2.335) and (t2m_min_rennes > -2.18) then response: 3147831.72 | based on 100 samples
+
+if (weighted_t2m_max <= 15.132) and (t2m_paris > 2.335) and (t2m_max_strasbourg <= 5.41) then response: 2983027.516 | based on 93 samples
+
+if (weighted_t2m_max <= 15.132) and (t2m_paris <= 2.335) and (t2m_min_rennes <= -2.18) then response: 3739174.529 | based on 17 samples
+
+if (weighted_t2m_max > 15.132) and (weighted_t2m_max <= 18.986) and (t2m_toulouse > 17.15) then response: 3482347.333 | based on 3 samples
+

@@ -1,0 +1,629 @@
+{
+    "uid": "57a672a9-0727-4498-bfe9-f988806e8cc2",
+    "name": "5_Default_NeuralNetwork",
+    "preprocessing": [
+        {
+            "scale": [
+                {
+                    "scale": [
+                        1.989281342020125,
+                        3.5182700256866664,
+                        15.340926591636416,
+                        5.4747763085687,
+                        6.204322239152185,
+                        7.182138063155897,
+                        3.7850369284125125,
+                        5.370122123606058,
+                        6.217335079578205,
+                        7.016452832313097,
+                        3.373325925305195,
+                        5.744953694782296,
+                        6.772753449703095,
+                        7.640415655741932,
+                        3.620162926988173,
+                        4.805137901689008,
+                        5.493519767375063,
+                        6.244627598817892,
+                        3.4932974134104393,
+                        5.329058634715573,
+                        6.021477809650552,
+                        6.732219165421296,
+                        3.696554256278786,
+                        6.154622274447989,
+                        7.195296004188732,
+                        8.271519084014448,
+                        3.9377805909211814,
+                        5.6709948018470495,
+                        5.951077863375014,
+                        6.23034210167175,
+                        5.734049415962297,
+                        6.6453256575999955,
+                        7.869439625614004,
+                        8.981767577064485,
+                        4.006061148682374,
+                        6.02078767898967,
+                        6.584530469914028,
+                        7.042961030595046,
+                        6.823753827347576,
+                        6.774761527568796,
+                        7.96857716292833,
+                        9.02105608637327,
+                        3.736688732645697,
+                        6.286160892302419,
+                        7.113677361021795,
+                        7.978702212670801,
+                        5.4215403664338675,
+                        6.57314285452842,
+                        5.651730553182747,
+                        7.311609796194143,
+                        2.7866320546024186
+                    ],
+                    "mean": [
+                        2.9726027397260273,
+                        6.593607305936073,
+                        26.89406392694064,
+                        9.577844748858448,
+                        13.793808219178082,
+                        18.64757077625571,
+                        2.1643287671232883,
+                        6.511342465753425,
+                        10.450182648401826,
+                        14.727607305936072,
+                        1.9840273972602742,
+                        6.551251141552512,
+                        10.974474885844748,
+                        15.755013698630135,
+                        1.8943287671232876,
+                        7.786922374429224,
+                        11.6227397260274,
+                        15.886484018264838,
+                        2.0333150684931507,
+                        7.652200913242009,
+                        12.004237442922374,
+                        16.80525114155251,
+                        2.007808219178082,
+                        8.720036529680364,
+                        13.560502283105023,
+                        19.11704109589041,
+                        2.210301369863014,
+                        13.147187214611872,
+                        15.80724200913242,
+                        18.63511415525114,
+                        1.7823287671232877,
+                        6.366018264840183,
+                        11.04026484018265,
+                        16.288630136986303,
+                        2.0052785388127856,
+                        10.480328767123288,
+                        13.43791780821918,
+                        16.82925114155251,
+                        2.3827123287671235,
+                        5.826602739726028,
+                        10.2517899543379,
+                        15.09317808219178,
+                        2.2021917808219182,
+                        9.416292237442923,
+                        13.768922374429225,
+                        18.794666666666668,
+                        2.1320182648401826,
+                        12.310919170564455,
+                        8.227409762703617,
+                        16.81335797839097,
+                        1.9934622966392523
+                    ],
+                    "var": [
+                        3.957240257709389,
+                        12.378223973645255,
+                        235.34402868997728,
+                        29.97317562886512,
+                        38.49361444723838,
+                        51.58310715823273,
+                        14.326504549446428,
+                        28.838211622443236,
+                        38.65525549175372,
+                        49.23061034807448,
+                        11.37932779833615,
+                        33.00449295519276,
+                        45.87018929046517,
+                        58.37595139250641,
+                        13.105579617939577,
+                        23.08935025424824,
+                        30.17875943454057,
+                        38.9953738479181,
+                        12.203126818540065,
+                        28.398865932236607,
+                        36.25819501211401,
+                        45.322774891265816,
+                        13.664513369612811,
+                        37.879375341131336,
+                        51.772284587894326,
+                        68.41802795721523,
+                        15.506115982235567,
+                        32.16018204257626,
+                        35.415327735952125,
+                        38.81716270386356,
+                        32.879322704697564,
+                        44.16035309555681,
+                        61.92808002118388,
+                        80.67214880840683,
+                        16.04852592698234,
+                        36.24988427547382,
+                        43.356041509226245,
+                        49.60330007848043,
+                        46.563616296240696,
+                        45.897393755426286,
+                        63.49822200154291,
+                        81.37945291349222,
+                        13.962842684681304,
+                        39.51581876391234,
+                        50.604405596714,
+                        63.65968899847793,
+                        29.39309994487187,
+                        43.20620698603803,
+                        31.942058245779368,
+                        53.45963781180217,
+                        7.765318207737696
+                    ],
+                    "n_samples_seen": 1095,
+                    "n_features_in": 51,
+                    "columns": [
+                        "weekday",
+                        "month",
+                        "week_number",
+                        "t2m_min_bordeaux",
+                        "t2m_bordeaux",
+                        "t2m_max_bordeaux",
+                        "prectot_bordeaux",
+                        "t2m_min_lille",
+                        "t2m_lille",
+                        "t2m_max_lille",
+                        "prectot_lille",
+                        "t2m_min_paris",
+                        "t2m_paris",
+                        "t2m_max_paris",
+                        "prectot_paris",
+                        "t2m_min_rennes",
+                        "t2m_rennes",
+                        "t2m_max_rennes",
+                        "prectot_rennes",
+                        "t2m_min_nantes",
+                        "t2m_nantes",
+                        "t2m_max_nantes",
+                        "prectot_nantes",
+                        "t2m_min_toulouse",
+                        "t2m_toulouse",
+                        "t2m_max_toulouse",
+                        "prectot_toulouse",
+                        "t2m_min_marseille",
+                        "t2m_marseille",
+                        "t2m_max_marseille",
+                        "prectot_marseille",
+                        "t2m_min_lyon",
+                        "t2m_lyon",
+                        "t2m_max_lyon",
+                        "prectot_lyon",
+                        "t2m_min_nice",
+                        "t2m_nice",
+                        "t2m_max_nice",
+                        "prectot_nice",
+                        "t2m_min_strasbourg",
+                        "t2m_strasbourg",
+                        "t2m_max_strasbourg",
+                        "prectot_strasbourg",
+                        "t2m_min_montpellier",
+                        "t2m_montpellier",
+                        "t2m_max_montpellier",
+                        "prectot_montpellier",
+                        "weighted_t2m",
+                        "weighted_t2m_min",
+                        "weighted_t2m_max",
+                        "weighted_prectot"
+                    ],
+                    "scale_method": "scale_normal"
+                }
+            ],
+            "scale_y": {
+                "scale": [
+                    521030.9163070029
+                ],
+                "mean": [
+                    2624961.388127854
+                ],
+                "var": [
+                    271473215747.71506
+                ],
+                "n_samples_seen": 1095,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_normal"
+            },
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {
+                    "weekday": [
+                        "scale_normal"
+                    ],
+                    "month": [
+                        "scale_normal"
+                    ],
+                    "week_number": [
+                        "scale_normal"
+                    ],
+                    "t2m_min_bordeaux": [
+                        "scale_normal"
+                    ],
+                    "t2m_bordeaux": [
+                        "scale_normal"
+                    ],
+                    "t2m_max_bordeaux": [
+                        "scale_normal"
+                    ],
+                    "prectot_bordeaux": [
+                        "scale_normal"
+                    ],
+                    "t2m_min_lille": [
+                        "scale_normal"
+                    ],
+                    "t2m_lille": [
+                        "scale_normal"
+                    ],
+                    "t2m_max_lille": [
+                        "scale_normal"
+                    ],
+                    "prectot_lille": [
+                        "scale_normal"
+                    ],
+                    "t2m_min_paris": [
+                        "scale_normal"
+                    ],
+                    "t2m_paris": [
+                        "scale_normal"
+                    ],
+                    "t2m_max_paris": [
+                        "scale_normal"
+                    ],
+                    "prectot_paris": [
+                        "scale_normal"
+                    ],
+                    "t2m_min_rennes": [
+                        "scale_normal"
+                    ],
+                    "t2m_rennes": [
+                        "scale_normal"
+                    ],
+                    "t2m_max_rennes": [
+                        "scale_normal"
+                    ],
+                    "prectot_rennes": [
+                        "scale_normal"
+                    ],
+                    "t2m_min_nantes": [
+                        "scale_normal"
+                    ],
+                    "t2m_nantes": [
+                        "scale_normal"
+                    ],
+                    "t2m_max_nantes": [
+                        "scale_normal"
+                    ],
+                    "prectot_nantes": [
+                        "scale_normal"
+                    ],
+                    "t2m_min_toulouse": [
+                        "scale_normal"
+                    ],
+                    "t2m_toulouse": [
+                        "scale_normal"
+                    ],
+                    "t2m_max_toulouse": [
+                        "scale_normal"
+                    ],
+                    "prectot_toulouse": [
+                        "scale_normal"
+                    ],
+                    "t2m_min_marseille": [
+                        "scale_normal"
+                    ],
+                    "t2m_marseille": [
+                        "scale_normal"
+                    ],
+                    "t2m_max_marseille": [
+                        "scale_normal"
+                    ],
+                    "prectot_marseille": [
+                        "scale_normal"
+                    ],
+                    "t2m_min_lyon": [
+                        "scale_normal"
+                    ],
+                    "t2m_lyon": [
+                        "scale_normal"
+                    ],
+                    "t2m_max_lyon": [
+                        "scale_normal"
+                    ],
+                    "prectot_lyon": [
+                        "scale_normal"
+                    ],
+                    "t2m_min_nice": [
+                        "scale_normal"
+                    ],
+                    "t2m_nice": [
+                        "scale_normal"
+                    ],
+                    "t2m_max_nice": [
+                        "scale_normal"
+                    ],
+                    "prectot_nice": [
+                        "scale_normal"
+                    ],
+                    "t2m_min_strasbourg": [
+                        "scale_normal"
+                    ],
+                    "t2m_strasbourg": [
+                        "scale_normal"
+                    ],
+                    "t2m_max_strasbourg": [
+                        "scale_normal"
+                    ],
+                    "prectot_strasbourg": [
+                        "scale_normal"
+                    ],
+                    "t2m_min_montpellier": [
+                        "scale_normal"
+                    ],
+                    "t2m_montpellier": [
+                        "scale_normal"
+                    ],
+                    "t2m_max_montpellier": [
+                        "scale_normal"
+                    ],
+                    "prectot_montpellier": [
+                        "scale_normal"
+                    ],
+                    "weighted_t2m": [
+                        "scale_normal"
+                    ],
+                    "weighted_t2m_min": [
+                        "scale_normal"
+                    ],
+                    "weighted_t2m_max": [
+                        "scale_normal"
+                    ],
+                    "weighted_prectot": [
+                        "scale_normal"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_normal"
+                ],
+                "ml_task": "regression"
+            }
+        }
+    ],
+    "learners": [
+        {
+            "library_version": "0.24.2",
+            "algorithm_name": "Neural Network",
+            "algorithm_short_name": "Neural Network",
+            "uid": "c73d43c9-3d02-4a9f-b380-9bb2a2442409",
+            "params": {
+                "model_type": "Neural Network",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "dense_1_size": 32,
+                "dense_2_size": 16,
+                "learning_rate": 0.05,
+                "seed": 5,
+                "explain_level": 2
+            },
+            "name": "learner_fold_0"
+        }
+    ],
+    "params": {
+        "additional": {
+            "max_rows_limit": null,
+            "max_cols_limit": null
+        },
+        "preprocessing": {
+            "columns_preprocessing": {
+                "weekday": [
+                    "scale_normal"
+                ],
+                "month": [
+                    "scale_normal"
+                ],
+                "week_number": [
+                    "scale_normal"
+                ],
+                "t2m_min_bordeaux": [
+                    "scale_normal"
+                ],
+                "t2m_bordeaux": [
+                    "scale_normal"
+                ],
+                "t2m_max_bordeaux": [
+                    "scale_normal"
+                ],
+                "prectot_bordeaux": [
+                    "scale_normal"
+                ],
+                "t2m_min_lille": [
+                    "scale_normal"
+                ],
+                "t2m_lille": [
+                    "scale_normal"
+                ],
+                "t2m_max_lille": [
+                    "scale_normal"
+                ],
+                "prectot_lille": [
+                    "scale_normal"
+                ],
+                "t2m_min_paris": [
+                    "scale_normal"
+                ],
+                "t2m_paris": [
+                    "scale_normal"
+                ],
+                "t2m_max_paris": [
+                    "scale_normal"
+                ],
+                "prectot_paris": [
+                    "scale_normal"
+                ],
+                "t2m_min_rennes": [
+                    "scale_normal"
+                ],
+                "t2m_rennes": [
+                    "scale_normal"
+                ],
+                "t2m_max_rennes": [
+                    "scale_normal"
+                ],
+                "prectot_rennes": [
+                    "scale_normal"
+                ],
+                "t2m_min_nantes": [
+                    "scale_normal"
+                ],
+                "t2m_nantes": [
+                    "scale_normal"
+                ],
+                "t2m_max_nantes": [
+                    "scale_normal"
+                ],
+                "prectot_nantes": [
+                    "scale_normal"
+                ],
+                "t2m_min_toulouse": [
+                    "scale_normal"
+                ],
+                "t2m_toulouse": [
+                    "scale_normal"
+                ],
+                "t2m_max_toulouse": [
+                    "scale_normal"
+                ],
+                "prectot_toulouse": [
+                    "scale_normal"
+                ],
+                "t2m_min_marseille": [
+                    "scale_normal"
+                ],
+                "t2m_marseille": [
+                    "scale_normal"
+                ],
+                "t2m_max_marseille": [
+                    "scale_normal"
+                ],
+                "prectot_marseille": [
+                    "scale_normal"
+                ],
+                "t2m_min_lyon": [
+                    "scale_normal"
+                ],
+                "t2m_lyon": [
+                    "scale_normal"
+                ],
+                "t2m_max_lyon": [
+                    "scale_normal"
+                ],
+                "prectot_lyon": [
+                    "scale_normal"
+                ],
+                "t2m_min_nice": [
+                    "scale_normal"
+                ],
+                "t2m_nice": [
+                    "scale_normal"
+                ],
+                "t2m_max_nice": [
+                    "scale_normal"
+                ],
+                "prectot_nice": [
+                    "scale_normal"
+                ],
+                "t2m_min_strasbourg": [
+                    "scale_normal"
+                ],
+                "t2m_strasbourg": [
+                    "scale_normal"
+                ],
+                "t2m_max_strasbourg": [
+                    "scale_normal"
+                ],
+                "prectot_strasbourg": [
+                    "scale_normal"
+                ],
+                "t2m_min_montpellier": [
+                    "scale_normal"
+                ],
+                "t2m_montpellier": [
+                    "scale_normal"
+                ],
+                "t2m_max_montpellier": [
+                    "scale_normal"
+                ],
+                "prectot_montpellier": [
+                    "scale_normal"
+                ],
+                "weighted_t2m": [
+                    "scale_normal"
+                ],
+                "weighted_t2m_min": [
+                    "scale_normal"
+                ],
+                "weighted_t2m_max": [
+                    "scale_normal"
+                ],
+                "weighted_prectot": [
+                    "scale_normal"
+                ]
+            },
+            "target_preprocessing": [
+                "na_exclude",
+                "scale_normal"
+            ],
+            "ml_task": "regression"
+        },
+        "validation_strategy": {
+            "validation_type": "split",
+            "train_ratio": 0.75,
+            "shuffle": true,
+            "X_path": "AutoML_1/X.data",
+            "y_path": "AutoML_1/y.data",
+            "results_path": "AutoML_1"
+        },
+        "learner": {
+            "model_type": "Neural Network",
+            "ml_task": "regression",
+            "n_jobs": -1,
+            "dense_1_size": 32,
+            "dense_2_size": 16,
+            "learning_rate": 0.05,
+            "seed": 5,
+            "explain_level": 2
+        },
+        "automl_random_state": 1234,
+        "ml_task": "regression",
+        "explain_level": 2,
+        "name": "5_Default_NeuralNetwork",
+        "status": "initialized",
+        "final_loss": null,
+        "train_time": null,
+        "data_type": "original",
+        "max_time_for_learner": 360.0
+    },
+    "saved": [
+        "5_Default_NeuralNetwork/learner_fold_0.neural_network"
+    ],
+    "predictions_fname": "5_Default_NeuralNetwork/predictions_validation.csv",
+    "metric_name": "rmse",
+    "final_loss": 430172.41157568287,
+    "train_time": 0.9437129497528076,
+    "is_stacked": false
+}

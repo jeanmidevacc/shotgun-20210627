@@ -1,0 +1,218 @@
+{
+    "columns": [
+        "weekday",
+        "month",
+        "week_number",
+        "t2m_min_bordeaux",
+        "t2m_bordeaux",
+        "t2m_max_bordeaux",
+        "prectot_bordeaux",
+        "t2m_min_lille",
+        "t2m_lille",
+        "t2m_max_lille",
+        "prectot_lille",
+        "t2m_min_paris",
+        "t2m_paris",
+        "t2m_max_paris",
+        "prectot_paris",
+        "t2m_min_rennes",
+        "t2m_rennes",
+        "t2m_max_rennes",
+        "prectot_rennes",
+        "t2m_min_nantes",
+        "t2m_nantes",
+        "t2m_max_nantes",
+        "prectot_nantes",
+        "t2m_min_toulouse",
+        "t2m_toulouse",
+        "t2m_max_toulouse",
+        "prectot_toulouse",
+        "t2m_min_marseille",
+        "t2m_marseille",
+        "t2m_max_marseille",
+        "prectot_marseille",
+        "t2m_min_lyon",
+        "t2m_lyon",
+        "t2m_max_lyon",
+        "prectot_lyon",
+        "t2m_min_nice",
+        "t2m_nice",
+        "t2m_max_nice",
+        "prectot_nice",
+        "t2m_min_strasbourg",
+        "t2m_strasbourg",
+        "t2m_max_strasbourg",
+        "prectot_strasbourg",
+        "t2m_min_montpellier",
+        "t2m_montpellier",
+        "t2m_max_montpellier",
+        "prectot_montpellier",
+        "weighted_t2m",
+        "weighted_t2m_min",
+        "weighted_t2m_max",
+        "weighted_prectot"
+    ],
+    "rows": 1460,
+    "cols": 51,
+    "target_is_numeric": true,
+    "columns_info": {
+        "weekday": [
+            "scale"
+        ],
+        "month": [
+            "scale"
+        ],
+        "week_number": [
+            "scale"
+        ],
+        "t2m_min_bordeaux": [
+            "scale"
+        ],
+        "t2m_bordeaux": [
+            "scale"
+        ],
+        "t2m_max_bordeaux": [
+            "scale"
+        ],
+        "prectot_bordeaux": [
+            "scale"
+        ],
+        "t2m_min_lille": [
+            "scale"
+        ],
+        "t2m_lille": [
+            "scale"
+        ],
+        "t2m_max_lille": [
+            "scale"
+        ],
+        "prectot_lille": [
+            "scale"
+        ],
+        "t2m_min_paris": [
+            "scale"
+        ],
+        "t2m_paris": [
+            "scale"
+        ],
+        "t2m_max_paris": [
+            "scale"
+        ],
+        "prectot_paris": [
+            "scale"
+        ],
+        "t2m_min_rennes": [
+            "scale"
+        ],
+        "t2m_rennes": [
+            "scale"
+        ],
+        "t2m_max_rennes": [
+            "scale"
+        ],
+        "prectot_rennes": [
+            "scale"
+        ],
+        "t2m_min_nantes": [
+            "scale"
+        ],
+        "t2m_nantes": [
+            "scale"
+        ],
+        "t2m_max_nantes": [
+            "scale"
+        ],
+        "prectot_nantes": [
+            "scale"
+        ],
+        "t2m_min_toulouse": [
+            "scale"
+        ],
+        "t2m_toulouse": [
+            "scale"
+        ],
+        "t2m_max_toulouse": [
+            "scale"
+        ],
+        "prectot_toulouse": [
+            "scale"
+        ],
+        "t2m_min_marseille": [
+            "scale"
+        ],
+        "t2m_marseille": [
+            "scale"
+        ],
+        "t2m_max_marseille": [
+            "scale"
+        ],
+        "prectot_marseille": [
+            "scale"
+        ],
+        "t2m_min_lyon": [
+            "scale"
+        ],
+        "t2m_lyon": [
+            "scale"
+        ],
+        "t2m_max_lyon": [
+            "scale"
+        ],
+        "prectot_lyon": [
+            "scale"
+        ],
+        "t2m_min_nice": [
+            "scale"
+        ],
+        "t2m_nice": [
+            "scale"
+        ],
+        "t2m_max_nice": [
+            "scale"
+        ],
+        "prectot_nice": [
+            "scale"
+        ],
+        "t2m_min_strasbourg": [
+            "scale"
+        ],
+        "t2m_strasbourg": [
+            "scale"
+        ],
+        "t2m_max_strasbourg": [
+            "scale"
+        ],
+        "prectot_strasbourg": [
+            "scale"
+        ],
+        "t2m_min_montpellier": [
+            "scale"
+        ],
+        "t2m_montpellier": [
+            "scale"
+        ],
+        "t2m_max_montpellier": [
+            "scale"
+        ],
+        "prectot_montpellier": [
+            "scale"
+        ],
+        "weighted_t2m": [
+            "scale"
+        ],
+        "weighted_t2m_min": [
+            "scale"
+        ],
+        "weighted_t2m_max": [
+            "scale"
+        ],
+        "weighted_prectot": [
+            "scale"
+        ]
+    },
+    "target_info": [
+        "scale"
+    ],
+    "n_features": 51,
+    "is_sample_weighted": false
+}

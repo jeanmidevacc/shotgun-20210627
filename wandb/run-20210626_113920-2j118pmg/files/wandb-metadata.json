@@ -1,0 +1,26 @@
+{
+    "os": "Linux-5.8.0-55-generic-x86_64-with-debian-bullseye-sid",
+    "python": "3.7.10",
+    "heartbeatAt": "2021-06-26T15:39:21.438874",
+    "startedAt": "2021-06-26T15:39:20.371107",
+    "docker": null,
+    "gpu": "GeForce GTX 1650 Ti",
+    "gpu_count": 1,
+    "cpu_count": 12,
+    "cuda": null,
+    "args": [
+        "-f",
+        "/home/jmdaignan/.local/share/jupyter/runtime/kernel-4f7349b9-ff0a-4b74-b38e-911c7b45c7ae.json"
+    ],
+    "state": "running",
+    "program": "<python with no main file>",
+    "git": {
+        "remote": "https://github.com/jeanmidevacc/shotgun-20210627.git",
+        "commit": "c8245ed0baaa1ae0cc9acf3a2f8f7c23fd65662f"
+    },
+    "email": "dellxps",
+    "root": "/home/jmdaignan/Development/shotgun-20210627",
+    "host": "jmdaignan-XPS-15",
+    "username": "jmdaignan",
+    "executable": "/home/jmdaignan/anaconda3/envs/oldml_p37/bin/python"
+}
